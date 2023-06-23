@@ -1,0 +1,112 @@
+1.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        for(i=1;i<=100;i++){
+            document.write(" <h1>Hi Weclome to Java Script<br>");
+        }
+
+    </script>
+   
+</head>
+<body bgcolor="yellow">
+   
+</body>
+</html>
+
+2.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+            // document.write("<h1>Hi Boss<h1>")
+                alert("Hi Boss")
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" onclick="abc()">
+</body>
+</html>
+
+3.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+
+            firstname=document.f1.fn.value;
+            lastname=document.f1.ln.value;
+            fullname = firstname +lastname;
+            document.f1.full.value=fullname;
+            // alert("My FUll name is :"+fullname);
+          
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1> HI Please fill the Details </h1>
+        
+        <form name="f1">
+                First Name :<input type="text" name="fn"><br>
+                Last Name :<input type="text" name="ln"><br>
+                Full name :<input type="text" name="full"><br>
+                <br>
+                <input type="button" value="CLICK" onclick="abc()"> 
+        </form>
+    </div>
+</body>
+</html>
+
+4.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+
+            a=parseInt(  document.f1.a.value );
+            b= parseInt( document.f1.b.value ) ;
+            sum = a +b;
+            document.f1.result.value=sum;
+
+          
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1> HI Please fill the Details </h1>
+        
+        <form name="f1">
+
+                A value<input type="text" name="a"><br>
+                B value  :<input type="text" name="b"><br>
+                
+               Result :<input type="text" name="result"><br>
+
+                <br>
+                <input type="button" value="ADD" onclick="abc()"> 
+        </form>
+    </div>
+</body>
+</html>
+
+5.
