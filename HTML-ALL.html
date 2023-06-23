@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Registaration Form</title>
+        <link rel="stylesheet" href="./responsiveRegistration.css">
+        <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+    </head>
+
+    <body>
+        <h1>Student Registaration Form</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="mobile">Mobile:</label>
+                </div>
+                <div class="col-90">
+                    <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="dob">Date Of Birth:</label>
+                </div>
+                <div class="col-90">
+                    <input type="Date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="city">City:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="city" name="city" maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="pincode">Area PIN:</label>
+                </div>
+                <div class="col-90">
+                    <input type="number" id="pin" name="pin" maxlength="6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="state">State:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="state" name="state">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="qualification" required >Qualification:</label>
+                </div>
+                <div class="col-90">
+                    <select name="qualification" id="qualification">
+                        <option value=" ">Select Qualification:</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="BTech.">BTech.</option>
+                        <option value="MTech.">MTech.</option>
+                        <option value="MCA">MCA</option>
+                        <option value="BCA">BCA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="specialization">Specialization:</label>
+                </div>
+                <div class="col-90">
+                    <input type="checkbox" class="specialization" id="cs" name="specialization[]" value="Computer Science">Computer Science<br/>
+                    <input type="checkbox" class="specialization" id="it" name="specialization[]" value="Information Technology">Information Technology<br/>
+                    <input type="checkbox" class="specialization" id="ca" name="specialization[]" value="Computer Architecture">Computer Architecture<br/>
+                    <input type="checkbox" class="specialization" id="tc" name="specialization[]" value="Tele Communication">Tele Communication<br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="col-90">
+                    <input type="password" id="password" name="password" maxlength="8">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Registered" onclick="SaveStudentDetails()">
+            </div>  
+        </div>  
+    </body>
+</html>
+  2 changes: 2 additions & 0 deletions2  
+HTML/Demo14.html
+@@ -15,3 +15,5 @@
+    <img src="C:\Users\THANESH\OneDrive\Desktop\MEAN\imag/SL3.jpg">
+</body>
+</html>
+
+
+  14 changes: 13 additions & 1 deletion14  
+HTML/Demo15.html
+@@ -6,6 +6,18 @@
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="text-align: center;"> 
+            <h1> Link Demo  </h1>
+            <a>CLICK</a><br>
+            <a href="">CLICK</a><br>
+            <a href="Demo12.html">CLICK</a> <br>
+            <a href="Demo12.html" target="_self">SELF</a> <br>
+            <a href="Demo12.html" target="_blank">NEW Tab</a>
+            <h1> HI Click hear for <a href="">Home page</a></h1>
+            <img src="SL3.jpg" width="20%"><br>
+            <a href="https://unsplash.com/s/photos/animal" target="_blank"><img src="SL3.jpg" width="20%"></a>
+
+
+    </div>
+</body>
+</html>
+ 23 changes: 23 additions & 0 deletions23  
+HTML/Demo16.html
+@@ -0,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1> Image / Audio/ Vedio</h1>
+
+        <img src="SL3.jpg"><br>
+
+        <video controls>
+            <source src="thaneshJavaDemo.mp4">
+        </video>
+        <br>
+        <audio controls>
+            <source src=".mp3">
+        </audio>      
+    </div>
+</body>
+</html>
+ 73 changes: 73 additions & 0 deletions73  
+HTML/Demo17.html
+@@ -0,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="yellow">
+    <div style="text-align: center;">
+        <h1> HI Form Demo </h1>
+        <form>
+
+            NAME : <input type="text"><br>
+            PASS :<input type="password"><br>
+            Email : <input type="email" style="width: 300px;height: 40px;border-radius: 10px;"><br>
+            Age :<input type="number"><br>
+            Phone :<input type="number"><br>
+            Gender:<input type="radio" name="x1"> MALE
+                 <input type="radio" name="x1"> FeMALE  <br>
+            DOB :<input type="date"><input type="time"><br>
+            Address : <textarea cols="25" rows="5"></textarea><br>
+Qualification : <select>
+                <option>B E </option>
+                <option >M Tech</option>
+                <option>M B A </option>
+                <option>B Sc</option>
+            </select><br>            
+ Specilization : <input type="checkbox"> JAVA 
+               <input type="checkbox"> CPP 
+               <input type="checkbox"> Python 
+               <input type="checkbox"> WEB 
+
+               <br>
+               Min: <input type="range">: max <br>
+               COlor: <input type="color"><br>
+               Resume :<input type="file">   
+     <br><br>
+<input type="submit"  style="background-color: green;height: 40px;width: 100px;color: white;border-radius: 10px;">
+            <input type="submit" value="REGISTER">
+            <input type="reset">
+        </form>
+            </fieldset>
+    </div>
+    <hr>
+    <div style="text-align: center;">
+        <table border="1">
+            <tr>
+                <th>NAME :</th>
+                <th><input type="text"></th>
+            </tr>
+            <tr>
+                <th>Password :</th>
+                <th><input type="text"></th>
+            </tr>
+            <tr>
+                <th>E Mail :</th>
+                <th><input type="text"></th>
+            </tr>
+            <tr>
+                <th>Qualification :</th>
+                <th><input type="text"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th><input type="submit"><input type="reset"></th>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+</html>
