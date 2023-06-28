@@ -1,0 +1,701 @@
+1.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        for(i=1;i<=100;i++){
+            document.write(" <h1>Hi Weclome to Java Script<br>");
+        }
+
+    </script>
+   
+</head>
+<body bgcolor="yellow">
+   
+</body>
+</html>
+
+2.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+            // document.write("<h1>Hi Boss<h1>")
+                alert("Hi Boss")
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" onclick="abc()">
+</body>
+</html>
+
+3.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+
+            firstname=document.f1.fn.value;
+            lastname=document.f1.ln.value;
+            fullname = firstname +lastname;
+            document.f1.full.value=fullname;
+            // alert("My FUll name is :"+fullname);
+          
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1> HI Please fill the Details </h1>
+        
+        <form name="f1">
+                First Name :<input type="text" name="fn"><br>
+                Last Name :<input type="text" name="ln"><br>
+                Full name :<input type="text" name="full"><br>
+                <br>
+                <input type="button" value="CLICK" onclick="abc()"> 
+        </form>
+    </div>
+</body>
+</html>
+
+4.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+
+            a=parseInt(  document.f1.a.value );
+            b= parseInt( document.f1.b.value ) ;
+            sum = a +b;
+            document.f1.result.value=sum;
+
+          
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1> HI Please fill the Details </h1>
+        
+        <form name="f1">
+
+                A value<input type="text" name="a"><br>
+                B value  :<input type="text" name="b"><br>
+                
+               Result :<input type="text" name="result"><br>
+
+                <br>
+                <input type="button" value="ADD" onclick="abc()"> 
+        </form>
+    </div>
+</body>
+</html>
+
+5.
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+           a=  parseInt( document.f1.a.value);
+           b=  parseInt(document.f1.b.value);
+           sum = a+ b;
+            document.f1.result.value=sum;
+        }
+        function sub(){
+           a=  parseInt( document.f1.a.value);
+           b=  parseInt(document.f1.b.value);
+           sum = a-  b;
+            document.f1.result.value=sum;
+        }
+        function mul(){
+           a=  parseInt( document.f1.a.value);
+           b=  parseInt(document.f1.b.value);
+           sum = a *  b;
+            document.f1.result.value=sum;
+        }
+        function div(){
+           a=  parseInt( document.f1.a.value);
+           b=  parseInt(document.f1.b.value);
+           sum = a / b;
+            document.f1.result.value=sum;
+        }
+    </script>
+</head>
+<body bgcolor="yellow">
+    <div style="text-align: center;">
+        <h1> Hi Caculator </h1>
+        
+        <form name="f1">
+
+            A value : <input type="text" name="a"><br>
+            B value :<input type="text" name="b"><br>
+            
+           Result :<input type="text" name="result"><br>
+
+            <br>
+            <input type="button" value="ADD" onclick="add()">
+            <input type="button" value="SUB" onclick="sub()">
+            <input type="button" value="MUL" onclick="mul()">
+            <input type="button" value="DIV" onclick="div()"> 
+    </form>
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
+
+
+6.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(value){
+            a=  parseInt( document.f1.a.value);
+           b=  parseInt(document.f1.b.value);
+            if(value=="ADD")
+            {
+                sum = a+ b;
+                 document.f1.result.value=sum;
+            }
+            else if(value=="SUB"){
+                sum = a - b;
+                 document.f1.result.value=sum;
+            }
+            else if(value=="MUL"){
+                sum = a * b;
+                 document.f1.result.value=sum;
+            }
+            else if(value=="DIV"){
+                sum = a / b;
+                 document.f1.result.value=sum;
+            } 
+        }
+        
+    </script>
+</head>
+<body bgcolor="yellow">
+    <div style="text-align: center;">
+        <h1> Hi Caculator </h1>
+        
+        <form name="f1">
+
+            A value : <input type="text" name="a"><br>
+            B value :<input type="text" name="b"><br>
+            
+           Result :<input type="text" name="result"><br>
+
+            <br>
+            <input type="button" value="ADD" onclick="cal(value)">
+            <input type="button" value="SUB" onclick="cal(value)">
+            <input type="button" value="MUL" onclick="cal(value)">
+            <input type="button" value="DIV" onclick="cal(value)"> 
+    </form>
+
+
+
+
+    </div>
+</body>
+</html>
+
+7.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(value) {
+            a = parseInt(document.f1.a.value);
+            b = parseInt(document.f1.b.value);
+            c = parseInt(document.f1.c.value);
+            d = parseInt(document.f1.d.value);
+            e = parseInt(document.f1.e.value);
+            f = parseInt(document.f1.f.value);
+
+            Total = a+b+c+d+e+f;
+            document.f1.g.value = Total
+        }
+    </script>
+</head>
+<body bgcolor=grey>
+    <div style="text-align: center;">
+        <form name="f1">
+            <h1>Mark Sheet</h1>
+            Subject1 : <input type="text" name="a"><br>
+            English : <input type="text" name="b"><br>
+            Hindi : <input type="text" name="c"><br>
+            Science : <input type="text" name="d"><br>
+            Maths : <input type="text" name="e"><br>
+            Social Science : <input type="text" name
+
+8.  <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+            alert("single click")
+        }
+        function xyz(){
+            alert("Double Click")
+        }
+        function getFullname(){
+            fn=document.f1.fn.value;ln=document.f1.ln.value;
+            fullname=fn+" "+ln;
+            document.f1.full.value=fullname;
+        }
+        function aaa(){
+            document.getElementById('fn').style.backgroundColor="lightblue";
+        }
+        function bbb(){
+            document.getElementById('fn').style.backgroundColor="red"
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <div  style="text-align: center;">
+      <marquee onmouseover="stop()" onmouseout="start()">  <h1>HI Event or Action Demo </h1> </marquee>
+        <form name="f1">
+           FIRST NAME  : <input type="text" name="fn" id="fn" onfocus="aaa()" onblur="bbb()"><br>
+            LAST NAME  :<input type="text" name="ln"><br>
+           FULL NAME  :<input type="text" name="full" onfocus="getFullname()"><br><br>
+           <input type="button" value="GET FULL Name" onclick="getFullname()"><hr>
+            <button type="button" onclick="abc()">CLICK</button>
+             <button type="button" ondblclick="xyz()">Double CLICK</button>
+        </form>
+    </div>             
+</body>
+</html>
+
+9.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+            alert("single click")
+        }
+        function xyz(){
+            alert("Double Click")
+        }
+        function getFullname(){
+            fn=document.f1.fn.value;ln=document.f1.ln.value;
+            fullname=fn+" "+ln;
+            document.f1.full.value=fullname;
+        }
+        function aaa(){
+            document.getElementById('fn').style.backgroundColor="lightblue";
+        }
+        function bbb(){
+            document.getElementById('fn').style.backgroundColor="red"
+        }
+        function bgclr(value){
+            document.getElementById('mypage').style.backgroundColor=value;
+        }
+    </script>
+</head>
+<body id="mypage">
+    <div  style="text-align: center;">
+      <marquee onmouseover="stop()" onmouseout="start()">  <h1>HI Event or Action Demo </h1> </marquee>
+        <form name="f1">
+           FIRST NAME  : <input type="text" name="fn" id="fn" onfocus="aaa()" onblur="bbb()"><br>
+            LAST NAME  :<input type="text" name="ln"><br>
+           FULL NAME  :<input type="text" name="full" onfocus="getFullname()"><br><br>
+           <input type="button" value="GET FULL Name" onclick="getFullname()"><hr>
+            <button type="button" onclick="abc()">CLICK</button>
+             <button type="button" ondblclick="xyz()">Double CLICK</button>
+             <select onchange="bgclr(value)">
+                <option  >CHOOSE</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="pink">pink</option>
+                <option value="yellow">yellow</option>
+             </select>
+        </form>
+    </div>              
+</body>
+</html>
+
+        <!-- onclick
+        ondblclick 
+        onmouseout
+        onmouseout
+        onfocus
+        onblure
+        onchang
+        ondrag
+        onsbmit -->
+
+10.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function valid(){
+           name=document.getElementById('uname').value;
+        //    alert("My name is :"+name)
+        if(name.length==0 || name.length==null|| name.length==undefined){
+           // alert("Name must be requried ");
+          // document.getElementById('msg').innerText="Name must be requried"
+           document.getElementById('msg').innerHTML="<i style='color:red'>Name must be requried</i>"
+        }
+        else if(name.length>=0 && name.length<=3){
+            // alert("Name must be more the 3 char ");
+            document.getElementById('msg').innerText="Name must be more the 3 char";
+            document.getElementById('msg').innerHTML="<i style='color:red'>Name must be more the 3 char</i>"
+        }
+        else if(name.length>=10){
+            document.getElementById('msg').innerText="Name must be 3-10 char";
+             document.getElementById('msg').innerHTML="<i style='color:red'>Name must be 3-10 char</i>"
+            // alert("Name must be 3-10 char ");
+        }
+        else{
+            // alert("Names okay");
+            // document.getElementById('msg').innerText="Name okay";
+            document.getElementById('msg').innerHTML="<i style='color:green'>Name is OKAY </i>" 
+        }
+    }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1> Validation Demo </h1>
+        USER NAME : <br>
+        <input type="text" id="uname"><br>
+        <span id="msg"></span><br>
+        <input type="button" value="CLICK" onclick="valid()">
+    </div>
+</body>
+</html>
+
+11.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myage(){
+           
+                alert("Invalid Age")
+                newage=prompt("Please Enter the Correct Age ")
+                resp=confirm("is it a Correct age  ?")
+              
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Window object : alert , confirm , Promp(BOM : browser object model ))</h1>
+       <input type="text" id="age">
+        <input type="submit"  value="ENTER AGE" onclick="myage()">
+    </div>
+</body>
+</html>
+
+12.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    
+</head>
+<body>
+    <p id="e"></p>
+ <script>
+    function emp(fn,ln,age,salary){
+        this.fn=fn;
+        this.ln=ln;
+       this.age= age;
+       this.salary= salary;
+    }
+    // emp("suresh","kuamr",35,50000);
+   const myemps=new emp("suresh","kuamr",35,50000);
+
+   emp.prototype.desig="Developer";
+
+   document.getElementById('e').innerHTML="My Name is "+myemps.fn +" Age is "+myemps.age+" Designation is"+myemps.desig
+
+ </script>
+
+<!-- prototype : it is used to add some extra parameter to the funtions  -->
+
+</body>
+</html>
+
+
+13.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+
+        function display(sum){
+            // console.log("Hello Disply "+sum)
+            document.getElementById('a').innerHTML="SUM is :"+sum;
+        }
+
+        function cal(n1,n2,display){
+            sum=n1+n2;
+             console.log(sum)
+             display(sum);// callback function
+        }
+        cal(100,200,display);
+        
+
+    </script>
+    
+</body>
+</html>
+
+14.
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function logical(){
+            n1=document.getElementById('num').value;
+            if(n1%2==0){
+document.getElementById('result').innerHTML="<p style='color:red'>NUMBER IS EVEN</p>";
+            }
+            else{
+
+document.getElementById('result').innerHTML="<p style='color:red' >NUMBER IS ODD</p>";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        ENTER NUMBER :
+        <input type="text" id="num">
+        <input type="button" onclick="logical()" value="CLICK">
+
+        <p id="result"></p>
+    </div>
+</body>
+</html>
+
+
+n1=document.getElementById("Item").value;
+   n2=document.getElementById("Price").value;
+   document.getElementById('food').innerHTML="Item:"  +n1
+   +"Price is"+n2;
+
+15.
+
+
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>BootStrap Icons</title>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+        <script>
+            function ADD(){
+               var  count=1;
+                document.getElementById('item').innerHTML="hi";
+            }
+        </script>
+    </head>
+        <body>
+           <span id="item"></span><br>
+        <i class='bi bi-cart'></i><br>
+
+        <input type="button" value="ADD" onclick="ADD()">
+        </body>
+    </html>
+
+16.
+
+
+<!DOCTYPE html>
+    <html>
+        <head>
+        <title>BootStrap Icons</title>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+        <script>
+            function ADD(){
+                const a=10; // we cant modift the value 
+                // let is block or local scope 
+                //var globle scope 
+              for(let i=0;i<=10;i++){
+                document.write("<h1>I :"+i+"<br>")
+              }
+              document.write("<h1>HIIIIIIIII:"+i)
+                a=10000;
+                console.log("A"+a)
+            }
+        </script>
+    </head>
+        <body>
+          
+        <input type="button" value="ADD" onclick="ADD()">
+        </body>
+    </html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var name="  pravin  ";
+        document.write("<h3>");
+        document.write(name.toUpperCase()+"<br>")
+        document.write(name.toLowerCase()+"<br>")
+        lastname="KUMAR";
+        document.write(name.concat(lastname)+"<br>");
+        document.write(name.length+"<br>");
+
+        fruits="Apple,banana,chiko";
+        document.write(fruits.slice(6,12)+"<br>")
+       
+        document.write( name.trim().length+"<br>")
+        let data="Suresh is  trainer";
+        document.write(data+"<br>")
+        document.write(data.replace("Suresh","Prakash"))
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+17.
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        const  fruits=["Apple","Jackfruit","Greps","Banana","Orange"];
+        for(var i=0;i<fruits.length;i++)
+        {
+            document.write(fruits[i]+"<br>")
+        }
+
+        document.write("<br>======= SORT ===============<br>");
+       
+        fruits.sort();
+        for(var i=0;i<fruits.length;i++)
+        {
+            document.write(fruits[i]+"<br>")
+        }
+       
+        document.write("<br>========POP ==============<br>");
+        fruits.pop();
+        for(var i=0;i<fruits.length;i++)
+        {
+            document.write(fruits[i]+"<br>")
+        } 
+        document.write("<br>========PUSH ==============<br>");
+        fruits.push("PINEAPPLE");
+        for(var i=0;i<fruits.length;i++)
+        {
+            document.write(fruits[i]+"<br>")
+        }
+        document.write("<br>========REVERSE==============<br>");
+        fruits.reverse();
+        for(var i=0;i<fruits.length;i++)
+        {
+            document.write(fruits[i]+"<br>")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+HTML 
+	CSS 
+	Bootstarcp 
+	basic javaScript 
+
+
+javaScript 
+
+Bootsrcp 5: glyphicons 
+
+
+
+===============================
+HTML
+                   Break (<br></br>)
+                   Paragraph (<p></p> Paragraph tag gives one more line)
+                   HR (<hr> horizontal tag gives one line)
+
+                   Closing Tags - H1-H6, Span, div, P 
+                   Non Closing Tags - HR, BR, IMG
+                   Ordered & Un-Ordered List 
+                    Table - Table. th, td , cellspacing, rowspan, colspan
+                    images :
+                    Links: 
+                    input forms 
+                    audio / vedio
+                    map :
+
